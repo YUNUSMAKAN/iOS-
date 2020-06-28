@@ -18,4 +18,9 @@ struct MusicianStruct {
     Bizim yapacagimiz islemleri daha iyi anlayabilen bir yapidir.
     Class a gore daha yalin bir yapiyo sahipdir.
      Objective-C de struct kullanilmaz. */
+    
+    mutating func happyBirthday() {
+        
+        self.age += 1 //Struct icinde bir fonksiyon altinda ilgili degiskenin degerini degistirmek icin fonksiyinu Mutating olarak tanimlamamiz gerekiyor.
+    }
 }

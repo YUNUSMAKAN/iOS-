@@ -22,5 +22,8 @@ class MusicianClass {
     }
     
     
+    func happyBirthday(){
+        self.age += 1
+    }
 }
 
