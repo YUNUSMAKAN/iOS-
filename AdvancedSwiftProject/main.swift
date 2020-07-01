@@ -95,3 +95,30 @@ print(newTuple.name)
 print(newTuple.metalice)
 
 
+// GUARD LET vs IF LET
+// Guard daha cok koruyucu yapiya sahip, if eger bu olursa bunu yap demek olur.
+// Guard -> Negative && Confident
+// if -> Positive
+
+let myNumber = "5"
+
+func convertToIntegerGuard (stringInput : String) -> Int {
+    guard let myInteger = Int(stringInput) else {
+           return 0 //Burada bastan yapamadiginda yapmasi gerektgini belirtiyoruz.
+    }
+    return myInteger
+}
+
+func convertToIntegerIf (stringInput : String) -> Int {
+    if let myInteger = Int(stringInput) {
+        
+        return myInteger
+    }else {
+        return 0
+    }
+    
+}
+//Else kullanacagimiz yerlerde guard let kullanmak daha mantikli olur.
+
+print(convertToIntegerIf(stringInput: myNumber))
+print(convertToIntegerGuard(stringInput: myNumber))
