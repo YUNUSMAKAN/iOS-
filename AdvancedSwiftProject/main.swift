@@ -55,12 +55,43 @@ copyOfClassJames.age = 52
 //Copy -> new object -> 2 objects
 
 
-//Function vs Mutating Function
+// FUNCTION vs MUTATING FUNCTION
 
-print(classJames.age)
+//print(classJames.age)
 classJames.happyBirthday()
-print(classJames.age)
+//print(classJames.age)
 
-print(structJames.age)
+//print(structJames.age)
 structJames.happyBirthday()
-print(structJames.age)
+//print(structJames.age)
+
+
+// TUPLE
+
+// Tuple : birden fazla veriyi ayni koleksiyon icinde gostermemize yarar.
+let myTuple = (1,3) //Yapisi 0.index = 1 , 1.index = 3
+print(myTuple.0) //=1
+print(myTuple.1)
+var myTuple2 = (1,4,5)
+myTuple2.2 = 10
+
+print(myTuple2.2)
+
+let myTuple3 = ("Yunus", 100)
+
+let myTuple4 = (10,[10,20,40])
+
+print(myTuple4.1[1]) //=20
+
+let predefindTuple : (String, String) //Tuple String olmasi gerektigini oncedende belirtebiliriz.
+
+predefindTuple.0 = "YUNUS"
+predefindTuple.1 = "MAKAN"
+
+print(predefindTuple)
+
+let newTuple = (name:"James", metalice: true) // isim vererekde tuple da olusturabiliriz.
+print(newTuple.name)
+print(newTuple.metalice)
+
+
