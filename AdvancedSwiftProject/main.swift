@@ -122,3 +122,42 @@ func convertToIntegerIf (stringInput : String) -> Int {
 
 print(convertToIntegerIf(stringInput: myNumber))
 print(convertToIntegerGuard(stringInput: myNumber))
+
+
+// SWITCH
+
+let myNum = 11
+
+//REMAINDER : Kalan bulma islemi
+
+let myRemainder = myNum % 6
+
+print(myRemainder)
+/*
+if myRemainder == 1 {
+    print("it's 1")
+}else if myRemainder == 2 {
+    print("it's 2 ")
+}else if myRemainder == 3 {
+    print("it's 3")
+}*/
+
+switch myRemainder {
+case 1...3 :
+    print("it's 1 - 3")
+case 4...7 :
+    print("it's 4 - 7")
+case 8 :
+    print("it's 8")
+default :
+    print("non of the above")
+    
+}
+
+
+
+
+
+
+
+
